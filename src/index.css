@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .markdown > *{
+        margin: 0 auto;
+        margin-bottom: 1rem; 
+    }
+
+    h1 {
+        @apply text-5xl;
+        
+        @apply font-bold; 
+    }
+    h2 {
+        @apply text-4xl;
+        @apply font-bold; 
+    }
+    h3 {
+        @apply text-3xl;
+        @apply font-bold; 
+    }
+    
+    h4 {
+        @apply text-2xl;
+        @apply font-bold; 
+    }
+    
+    h5 {
+        @apply text-xl;
+    }
+    
+    h6 {
+        @apply text-sm;
+    }
+
+    ul {
+        list-style: inside;
+        
+    }
+
+    ol{
+        list-style: decimal;
+        
+    }
+
+    li {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: 40px; 
+    }
+
+    a{ 
+        color: #007bff;
+        text-decoration: underline;
+        background-color: transparent;
+    }
+
+    a:active{
+        color: #e477ff;
+    }
+
+    code {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        background-color: #000000;
+        padding: 2px 4px;
+        border-radius: 4px;
+        color: white;
+    }
+
+    blockquote {
+        margin: 0;
+        padding: 0 1em;
+        color: #666666;
+        border-left: 0.25em solid #CCCCCC;
+    }
+}
