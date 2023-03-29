@@ -120,7 +120,7 @@ function App() {
       <div className="ml-4 mr-4">
         <Routes>
           <Route
-            path="/"
+            path="/note-app/"
             element={
               <NoteList
                 notes={notesWithTags}
@@ -156,7 +156,7 @@ function App() {
               }
             />
           </Route>
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<Navigate to="/note-app/" />} />
         </Routes>
       </div>
     </div>
