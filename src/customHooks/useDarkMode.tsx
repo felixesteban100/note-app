@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
+import useLocalStorage from './useLocalStorage'
 
 const useDarkMode = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  // const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useLocalStorage("THEME_NOTEAPP", false)
 
   useEffect(() => {
     const html = document.documentElement
